@@ -1,0 +1,35 @@
+D. Mechem 30 June 2019
+
+SOM synoptic classifications for the years 2013-2018. Classification is
+based on the SOM analysis of Mechem et al. (JAMC 2018, referred to here as
+M18), which ran from 1979-2012. The SOM algorithm was not redone for these
+additional years; rather, we just projected these additional dates onto the
+existing classification.
+
+The file classifications_combined.dat contains three columns:
+yyyymmddhh node m18_synoptic_classification
+
+yyyymmddhh -- The first column is self-explanatory and corresponds to the
+date and time of the ERA-I 500-hPa reanalysis field. Plots of the 500-hPa
+field and the normalized anomalies that are used to match the field to the
+SOM nodes are available separately.
+
+node -- This corresponds to one of the 25 monthly SOM nodes in Mechem et al.
+(JAMC 2018, referred to here as M18). Note that the nodes are *monthly*, so
+there are 12*25 nodes in total.  When thinking about the nodes, it is
+helpful to refer to the M18 supplement, which shows the SOM nodes for each
+month.
+
+m18_synoptic_classification -- This refers to the following subjective
+distillation of the nodes performed in M18:
+1 = Pre-trough
+2 = Trough
+3 = Post-trough
+4 = Ridge
+5 = Zonal
+6 = Unclassified
+These are listed in the M18 supplement. Note that these are the
+month-by-month synoptic classification, so 'Trough' in July means something
+different than 'Trough' in January. See the paper for details.
+
+
